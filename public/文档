@@ -1,0 +1,11 @@
+//php artisan make:migration create_category  创建表
+php artisan migrate 执行迁移表
+//php artisan make:seeder CategoryTableSeeder
+再DatabaseSender 中添加 this->call 对应类方法后 执行
+composer dump-autoload 重载配置
+php artisan db:seed
+php artisan db:seed --class=UsersTableSeeder 指定对应的类执行
+
+model 需要建model为后缀名的 model  需要加引号
+php artisan admin:make 'Cate\CategoryController' --model='App\Admin\Models\CategoryModel'
+

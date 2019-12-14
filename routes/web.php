@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::any('/test','HomeController@test')->name('test');
+Route::any('/test2','HomeController@test2')->name('test2');
